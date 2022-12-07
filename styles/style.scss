@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+@import "text";
+@import "header";
+@import "footer";
+@import "img";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+// div {
+//   border: 1px solid;
+// }
+// nav {
+//   border: 1px solid;
+// }
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  flex-grow: 1;
+  width: 100%;
+  margin: 1rem 0;
+  @include sm {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  @include md {
+    width: 70%;
+    max-width: 1200px;
+  }
+}
+article {
+  padding: 10px;
+}
+section {
+  max-width: 45ch;
+}
+
+button {
+  @include button;
+}

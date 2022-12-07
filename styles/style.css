@@ -1,0 +1,279 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #7c91ad;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.top-bar {
+  font-size: small;
+  text-align: center;
+}
+
+footer {
+  line-height: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.9em;
+}
+footer i {
+  font-size: 1.5em;
+  padding-right: 5px;
+}
+
+.footer-copy {
+  text-align: right;
+  font-size: small;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #6d7872;
+}
+header a {
+  color: #ffffff;
+}
+header li {
+  list-style: none;
+}
+
+.top-bar {
+  display: none;
+  background-color: #d9e1df;
+  color: #000000;
+  padding: 0.4rem;
+}
+.top-bar a {
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .top-bar {
+    display: block;
+  }
+}
+
+.nav-link {
+  transition: 0.5s ease;
+}
+
+.navbar {
+  min-height: 50px;
+  max-width: 1400px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkittransition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 90px;
+  flex-direction: column;
+  background-color: #6d7872;
+  padding-bottom: 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: static;
+    gap: 60px;
+    padding-bottom: 0px;
+  }
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+.nav-menu.active {
+  right: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+footer {
+  background-color: #d9e0de;
+  color: #000000;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+@media (min-width: 1200px) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer-content ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.footer-content li {
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-content {
+    width: 60%;
+    margin: 0px;
+  }
+}
+
+.footer-copy {
+  background-color: #d9e0de;
+  color: #333936;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+img.log {
+  width: 90px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  flex-grow: 1;
+  width: 100%;
+  margin: 1rem 0;
+}
+@media (min-width: 576px) {
+  #content-wrap {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+@media (min-width: 768px) {
+  #content-wrap {
+    width: 70%;
+    max-width: 1200px;
+  }
+}
+
+article {
+  padding: 10px;
+}
+
+section {
+  max-width: 45ch;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #6d7872;
+}/*# sourceMappingURL=style.css.map */

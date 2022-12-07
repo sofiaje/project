@@ -1,0 +1,50 @@
+footer {
+  background-color: $footerColor;
+  color: $footerColorElements;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 15px;
+  max-width: 1400px;
+  margin: 0px auto;
+
+  @include xl {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.footer-logo {
+  text-align: center;
+  margin-bottom: 30px;
+  @include xl {
+    text-align: left;
+  }
+}
+.footer-content {
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    list-style: none;
+  }
+  @include flex($direction: column);
+
+  @include md {
+    @include flex($justify: space-between);
+    width: 80%;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  @include xl {
+    width: 60%;
+    margin: 0px;
+  }
+}
+.footer-copy {
+  background-color: $footerCopyColor;
+  color: $footerCopyColorElements;
+
+  padding: 1rem;
+}

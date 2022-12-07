@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Libre Franklin", sans-serif;
+}
+h1 {
+  text-align: center;
+  // font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: $footerColorElements;
+  &:hover {
+    color: $linkHoverHeader;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.top-bar {
+  font-size: small;
+  text-align: center;
+}
+
+footer {
+  line-height: 1.3em;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 0.9em;
+  i {
+    font-size: 1.5em;
+    padding-right: 5px;
+  }
+}
+.footer-copy {
+  text-align: right;
+  font-size: small;
+}
