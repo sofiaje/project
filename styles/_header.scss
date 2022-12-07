@@ -11,6 +11,7 @@ header {
     list-style: none;
   }
 }
+
 .top-bar {
   display: none;
   background-color: $topBarColor;
@@ -48,7 +49,7 @@ header {
 .nav-menu {
   position: fixed;
   right: -100%;
-  top: 90px;
+  top: 110px;
   flex-direction: column;
   background-color: $headerColor;
   padding-bottom: 30px;
@@ -71,6 +72,7 @@ header {
   }
 }
 .nav-menu.active {
+  position: absolute;
   right: 0;
 }
 .hamburger {
@@ -79,6 +81,9 @@ header {
   @include md {
     display: none;
   }
+}
+button.hamburger {
+  background-color: transparent;
 }
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;

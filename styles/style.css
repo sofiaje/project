@@ -8,6 +8,11 @@ h5 {
 
 h1 {
   text-align: center;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 a {
@@ -102,7 +107,7 @@ header li {
 .nav-menu {
   position: fixed;
   right: -100%;
-  top: 90px;
+  top: 110px;
   flex-direction: column;
   background-color: #6d7872;
   padding-bottom: 30px;
@@ -124,6 +129,7 @@ header li {
   margin: 1rem 0;
 }
 .nav-menu.active {
+  position: absolute;
   right: 0;
 }
 
@@ -135,6 +141,10 @@ header li {
   .hamburger {
     display: none;
   }
+}
+
+button.hamburger {
+  background-color: transparent;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -267,7 +277,7 @@ section {
 }
 
 button {
-  background-color: black;
+  background-color: #000000;
   color: white;
   border: 0px;
   padding: 0.5rem 1.5rem;
