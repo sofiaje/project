@@ -47,14 +47,14 @@ header {
   background-color: $headerColorElements;
 }
 .nav-menu {
-  position: absolute;
-  right: -100%;
-  top: 110px;
+  position: fixed;
+  top: -100%;
+  right: 0;
   flex-direction: column;
   background-color: $headerColor;
   padding-bottom: 30px;
   width: 100%;
-  transition: 0.3s;
+  transition: 0.4s;
 
   @include md {
     display: flex;
@@ -72,6 +72,7 @@ header {
 }
 .nav-menu.active {
   position: absolute;
+  top: 110px;
   right: 0;
   @include md {
     display: flex;
