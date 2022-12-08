@@ -2,8 +2,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+header,
+footer {
   font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
@@ -22,14 +28,6 @@ a:hover {
   color: #7c91ad;
 }
 
-body {
-  font-family: "Nunito", sans-serif;
-}
-
-header {
-  font-family: "Libre Franklin", sans-serif;
-}
-
 .top-bar {
   font-size: small;
   text-align: center;
@@ -37,7 +35,6 @@ header {
 
 footer {
   line-height: 1.3em;
-  font-family: "Libre Franklin", sans-serif;
   font-size: 0.9em;
 }
 footer i {
