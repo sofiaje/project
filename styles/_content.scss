@@ -1,0 +1,35 @@
+#content-wrap {
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  @include sm {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include md {
+    width: 70%;
+    max-width: 1200px;
+  }
+}
+.main-center {
+  @include flex;
+}
+.center {
+  text-align: center;
+}
+
+article {
+  @include flex($justify: space-between);
+  gap: 0.5rem;
+}
+section {
+  text-align: left;
+  max-width: 400px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  @include button;
+}

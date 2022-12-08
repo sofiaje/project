@@ -29,13 +29,12 @@ header {
   transition: 0.5s ease;
 }
 .navbar {
-  // min-height: 50px;
   max-width: 1400px;
-  margin: 0px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 .bar {
   display: block;

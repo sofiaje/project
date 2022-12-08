@@ -6,19 +6,18 @@ footer {
   display: flex;
   flex-direction: column;
 
-  padding: 30px 15px;
+  padding: 2rem 1.5rem;
   max-width: 1400px;
   margin: 0px auto;
 
   @include xl {
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex($justify: space-between);
   }
 }
 .footer-logo {
   text-align: center;
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
   max-width: 250px;
   @include xl {
     text-align: left;
@@ -36,12 +35,12 @@ footer {
   @include md {
     @include flex($justify: space-between);
     width: 80%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0px auto;
   }
   @include xl {
     width: 60%;
-    margin: 0px;
+    margin: 0;
   }
 }
 .footer-copy {

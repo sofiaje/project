@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixins";
 @import "text";
+@import "content";
 @import "header";
 @import "footer";
 @import "img";
+@import "form";
 
 body {
   padding: 0;
@@ -12,39 +14,23 @@ body {
 * {
   box-sizing: border-box;
 }
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 // div {
 //   border: 1px solid;
 // }
 // nav {
 //   border: 1px solid;
 // }
-
-#page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  flex-grow: 1;
-  width: 100%;
-  margin: 1rem 0;
-  @include sm {
-    width: 90%;
-    margin: 1rem auto;
-  }
-  @include md {
-    width: 70%;
-    max-width: 1200px;
-  }
-}
-article {
-  padding: 10px;
-}
-section {
-  max-width: 45ch;
-}
-
-button {
-  @include button;
-}
+// main {
+//   border: 1px solid blue;
+// }
+// article {
+//   border: 1px solid green;
+// }
+// section {
+//   border: 1px solid red;
+// }

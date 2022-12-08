@@ -2,22 +2,20 @@ h1,
 h2,
 h3,
 h4,
-h5, 
-header, 
+h5,
+header,
 footer {
   font-family: "Libre Franklin", sans-serif;
 }
 body {
   font-family: "Nunito", sans-serif;
 }
-
 h1 {
+  margin-top: 0rem;
   font-size: 1.75rem;
 }
-h2 {
-  font-size: 1.5rem;
-}
 
+//default link
 a {
   text-decoration: none;
   color: $footerColorElements;
@@ -39,6 +37,7 @@ footer {
     padding-right: 5px;
   }
 }
+
 .footer-copy {
   text-align: right;
   font-size: small;

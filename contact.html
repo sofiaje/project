@@ -28,37 +28,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <!DOCTYPE html>
-<html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>knuten</title>
-    <!-- css -->
-    <link rel="stylesheet" href="styles/style.css" />
 
-    <!-- javascript -->
-    <script defer src="script.js"></script>
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&family=Nunito:wght@300&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
   <body>
     <div id="page-container">
       <header>
@@ -102,11 +72,51 @@
         </nav>
       </header>
 
-      <div id="content-wrap">
-        <main>
-          <h1>Kontakt</h1>
-        </main>
-      </div>
+      <main id="content-wrap">
+
+          <img
+            class="big"
+            src="assets/pexels-cup-of-couple-7302403.jpg"
+            alt=""
+          />
+
+          
+        
+          <section>
+            <h1>Kontaktuppgifter</h1>
+            <p>
+              Tel: 073-0447631 <br />
+              Email: info@knuten.com
+            </p>
+            <h2>Besöksadress</h2>
+            <p>
+              Hanverkargatan 2 <br />
+              121 31 Stockholm
+            </p>
+          </section>
+          <section class="form">
+            <h2>Använd kontaktformulär</h2>
+            <form>
+              <label for="name">Namn</label><br />
+              <input type="text" name="contact" id="name" /><br />
+              <label for="email">E-postadress</label><br />
+              <input type="email" name="contact" id="email" /><br />
+              <label for="subject">Välj ämne</label><br>
+              <select name="subject" id="subject">
+                <option value="choose">...</option>
+                <option value="book">Boka kurs</option>
+                <option value="questions">Frågor om företaget</option>
+                <option value="notes">Synpunkter på webbsidan</option></select
+              ><br />
+
+              <label for="textarea">Ditt ärende</label><br />
+              <input type="text" name="contact" id="textarea" /><br />
+
+              <button>Skicka</button>
+            </form>
+          </section>
+        </article>
+      </main>
 
       <footer>
         <div class="footer-wrapper">
@@ -176,8 +186,5 @@
         <div class="footer-copy">&copy; Knuten keramikverkstad 2022</div>
       </footer>
     </div>
-  </body>
-</html>
-
   </body>
 </html>

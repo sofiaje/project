@@ -1,9 +1,21 @@
-img {
-  width: 100%;
-}
 img.log {
   width: 90px;
 }
 nav img.log {
   padding: 1.2rem 0;
+}
+
+.big {
+  width: 100%;
+  // margin-bottom: 0.5rem;
+}
+.half {
+  width: calc(50% - 0.25rem);
+}
+
+.portrait {
+  width: 100%;
+  @include md {
+    width: 50%;
+  }
 }

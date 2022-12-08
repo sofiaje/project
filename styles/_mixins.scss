@@ -37,8 +37,8 @@ $xl: 1200px;
   flex-wrap: $wrap;
 }
 
-@mixin button {
-  background-color: #000000;
+@mixin button($btnColor: black) {
+  background-color: $btnColor;
   color: white;
   border: 0px;
   padding: 0.5rem 1.5rem;
