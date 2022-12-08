@@ -13,7 +13,6 @@ body {
 }
 
 h1 {
-  margin-top: 0rem;
   font-size: 1.75rem;
 }
 
@@ -75,7 +74,7 @@ footer i {
   text-align: center;
 }
 
-article {
+.gallery {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,9 +85,19 @@ article {
 
 section {
   text-align: left;
-  max-width: 400px;
+  max-width: 450px;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  section {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1300px) {
+  section {
+    max-width: 450px;
+  }
 }
 
 button {
@@ -100,6 +109,43 @@ button {
   border-radius: 5px;
 }
 button:hover {
+  background-color: #6d7872;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+section.card {
+  background-color: #d9e0de;
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5em;
+}
+@media (min-width: 576px) {
+  section.card {
+    width: calc(50% - 1rem);
+  }
+}
+@media (min-width: 1300px) {
+  section.card {
+    width: calc(33% - 1rem);
+  }
+}
+section.card button {
   background-color: #6d7872;
 }
 
@@ -235,7 +281,7 @@ footer {
   max-width: 1400px;
   margin: 0px auto;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .footer-wrapper {
     display: flex;
     flex-direction: row;
@@ -251,7 +297,7 @@ footer {
   margin-bottom: 2.5rem;
   max-width: 250px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .footer-logo {
     text-align: left;
   }
@@ -283,7 +329,7 @@ footer {
     margin: 0px auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .footer-content {
     width: 60%;
     margin: 0;
@@ -310,6 +356,7 @@ nav img.log {
 
 .half {
   width: calc(50% - 0.25rem);
+  max-height: 50vh;
 }
 
 .portrait {
@@ -317,6 +364,21 @@ nav img.log {
 }
 @media (min-width: 768px) {
   .portrait {
+    width: 50%;
+  }
+}
+
+img.right {
+  float: right;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  img.right {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  img.right {
     width: 50%;
   }
 }

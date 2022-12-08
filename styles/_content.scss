@@ -19,17 +19,48 @@
   text-align: center;
 }
 
-article {
+.gallery {
   @include flex($justify: space-between);
   gap: 0.5rem;
 }
 section {
   text-align: left;
-  max-width: 400px;
+  max-width: 450px;
   padding: 1rem;
   margin-bottom: 1rem;
+  @include lg {
+    max-width: 400px;
+  }
+  @include xl {
+    max-width: 450px;
+  }
 }
 
 button {
   @include button;
+}
+
+// cards
+
+.cards {
+  @include flex($justify: center);
+  @include sm {
+    @include flex($justify: space-between);
+  }
+}
+section.card {
+  background-color: $footerColor;
+
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5em;
+  @include sm {
+    width: calc(50% - 1rem);
+  }
+  @include xl {
+    width: calc(33% - 1rem);
+  }
+  button {
+    background-color: $headerColor;
+  }
 }

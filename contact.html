@@ -72,50 +72,63 @@
         </nav>
       </header>
 
-      <main id="content-wrap">
-
-          <img
-            class="big"
-            src="assets/pexels-cup-of-couple-7302403.jpg"
-            alt=""
-          />
-
-          
-        
-          <section>
-            <h1>Kontaktuppgifter</h1>
-            <p>
-              Tel: 073-0447631 <br />
-              Email: info@knuten.com
-            </p>
-            <h2>Besöksadress</h2>
-            <p>
-              Hanverkargatan 2 <br />
-              121 31 Stockholm
-            </p>
-          </section>
-          <section class="form">
-            <h2>Använd kontaktformulär</h2>
-            <form>
+      <main id="content-wrap" class="main-left">
+        <img
+          class="big"
+          src="./assets/pexels-cup-of-couple-7302403.jpg"
+          alt=""
+        />
+        <section>
+          <h1>Kontaktuppgifter</h1>
+          <p>
+            Tel: 073-0447631 <br />
+            Email: info@knuten.com
+          </p>
+          <br />
+          <h2>Besöksadress</h2>
+          <p>
+            Hanverkargatan 2 <br />
+            121 31 Stockholm
+          </p>
+        </section>
+        <section class="form">
+          <h2>Använd kontaktformulär</h2>
+          <form>
+            <div>
               <label for="name">Namn</label><br />
-              <input type="text" name="contact" id="name" /><br />
+              <input
+                type="text"
+                name="contact"
+                id="name"
+                autocomplete="cc-name"
+              />
+            </div>
+            <div>
               <label for="email">E-postadress</label><br />
-              <input type="email" name="contact" id="email" /><br />
-              <label for="subject">Välj ämne</label><br>
+              <input
+                type="email"
+                name="contact"
+                id="email"
+                autocomplete="email"
+              /><br />
+            </div>
+            <div>
+              <label for="subject">Välj ämne</label><br />
               <select name="subject" id="subject">
                 <option value="choose">...</option>
                 <option value="book">Boka kurs</option>
                 <option value="questions">Frågor om företaget</option>
                 <option value="notes">Synpunkter på webbsidan</option></select
               ><br />
-
+            </div>
+            <div>
               <label for="textarea">Ditt ärende</label><br />
               <input type="text" name="contact" id="textarea" /><br />
+            </div>
 
-              <button>Skicka</button>
-            </form>
-          </section>
-        </article>
+            <button>Skicka</button>
+          </form>
+        </section>
       </main>
 
       <footer>
