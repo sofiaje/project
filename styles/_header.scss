@@ -3,6 +3,7 @@
 }
 header {
   background-color: $headerColor;
+  min-height: 100px;
   // box-shadow: 0px 2px 10px #888888;
   a {
     color: $headerColorElements;
@@ -28,7 +29,7 @@ header {
   transition: 0.5s ease;
 }
 .navbar {
-  min-height: 50px;
+  // min-height: 50px;
   max-width: 1400px;
   margin: 0px auto;
   display: flex;

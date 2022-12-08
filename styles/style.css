@@ -56,6 +56,7 @@ footer i {
 
 header {
   background-color: #6d7872;
+  min-height: 100px;
 }
 header a {
   color: #ffffff;
@@ -84,7 +85,6 @@ header li {
 }
 
 .navbar {
-  min-height: 50px;
   max-width: 1400px;
   margin: 0px auto;
   display: flex;
