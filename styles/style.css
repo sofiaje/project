@@ -188,7 +188,9 @@ footer {
 
 .footer-logo {
   text-align: center;
+  align-self: center;
   margin-bottom: 30px;
+  max-width: 250px;
 }
 @media (min-width: 1200px) {
   .footer-logo {

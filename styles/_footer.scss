@@ -17,7 +17,9 @@ footer {
 }
 .footer-logo {
   text-align: center;
+  align-self: center;
   margin-bottom: 30px;
+  max-width: 250px;
   @include xl {
     text-align: left;
   }
