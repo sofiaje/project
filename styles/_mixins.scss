@@ -27,18 +27,17 @@ $xl: 1300px;
 @mixin flex(
   $direction: row,
   $justify: space-around,
-  // $align: flex-start,
   $wrap: wrap
 ) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
-  // align-items: $align;
   flex-wrap: $wrap;
 }
 
 @mixin button($btnColor: black) {
   background-color: $btnColor;
+  font-size: medium;
   color: white;
   border: 0px;
   padding: 0.5rem 1.5rem;

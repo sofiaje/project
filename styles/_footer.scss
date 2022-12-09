@@ -14,6 +14,8 @@ footer {
     @include flex($justify: space-between);
   }
 }
+
+//footer-logo + text
 .footer-logo {
   text-align: center;
   align-self: center;
@@ -23,6 +25,7 @@ footer {
     text-align: left;
   }
 }
+
 .footer-content {
   ul {
     padding-inline-start: 0;

@@ -1,3 +1,69 @@
+img.log {
+  width: 90px;
+}
+
+nav img.log {
+  padding: 1.2rem 0;
+}
+
+.big {
+  width: 100%;
+}
+
+.half {
+  width: calc(50% - 0.25rem);
+  max-height: 60vh;
+}
+
+.small {
+  border-radius: 50%;
+  width: 20%;
+  padding: 0.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.flex-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.parent {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent.landscape {
+  max-height: 450px;
+  margin: 0.5rem 0;
+}
+
+.parent.portrait {
+  width: calc(50% - 0.25rem);
+  max-height: 400px;
+}
+@media (min-width: 768px) {
+  .parent.portrait {
+    max-height: 550px;
+  }
+}
+
+.parent img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -8,7 +74,8 @@ footer {
   font-family: "Libre Franklin", sans-serif;
 }
 
-body {
+body,
+button {
   font-family: "Nunito", sans-serif;
 }
 
@@ -23,6 +90,11 @@ h1 {
 
 h3 {
   font-size: 1.1rem;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 1rem 0;
 }
 
 a {
@@ -43,7 +115,7 @@ i {
 }
 
 footer {
-  line-height: 1.3em;
+  line-height: 1.4em;
   font-size: 0.9em;
 }
 footer i {
@@ -86,11 +158,17 @@ footer i {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .flex-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 section {
   text-align: left;
   max-width: 450px;
   padding: 1rem;
-  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   section {
@@ -100,6 +178,7 @@ section {
 
 button {
   background-color: black;
+  font-size: medium;
   color: white;
   border: 0px;
   padding: 0.5rem 1.5rem;
@@ -172,10 +251,6 @@ section.card button {
 
 header {
   background-color: #6d7872;
-  min-height: 100px;
-}
-header a {
-  color: #ffffff;
 }
 header li {
   list-style: none;
@@ -186,9 +261,6 @@ header li {
   background-color: #d9e1df;
   color: #000000;
   padding: 0.4rem;
-}
-.top-bar a {
-  color: #000000;
 }
 @media (min-width: 768px) {
   .top-bar {
@@ -241,7 +313,7 @@ header li {
 }
 
 .nav-item {
-  margin: 1rem 0;
+  margin-block: 1rem;
 }
 .nav-menu.active {
   position: absolute;
@@ -354,111 +426,6 @@ footer {
   background-color: #d9e0de;
   color: #333936;
   padding: 1rem;
-}
-
-img.log {
-  width: 90px;
-}
-
-nav img.log {
-  padding: 1.2rem 0;
-}
-
-.big {
-  width: 100%;
-}
-
-.half {
-  width: calc(50% - 0.25rem);
-  max-height: 60vh;
-}
-
-.small {
-  border-radius: 50%;
-  width: 20%;
-  padding: 0.5rem;
-}
-
-img.right {
-  float: right;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  img.right {
-    width: 70%;
-  }
-}
-@media (min-width: 992px) {
-  img.right {
-    width: 50%;
-  }
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.parent {
-  width: 100%;
-  height: 450px;
-}
-
-.parent.portrait {
-  width: calc(50% - 0.25rem);
-  height: 400px;
-}
-@media (min-width: 768px) {
-  .parent.portrait {
-    height: 550px;
-  }
-}
-
-.child {
-  width: 100%;
-  height: 100%;
-  background-color: #d9e0de;
-  background-position: center;
-  background-size: cover;
-}
-
-.child.index1 {
-  background-image: url("./assets/pexels-cottonbro-studio-3094036.jpg");
-}
-
-.child.index2 {
-  background-image: url("./assets/pexels-yan-krukov-6611393.jpg");
-}
-
-.child.index3 {
-  background-image: url("./assets/pexels-cup-of-couple-7302403.jpg");
-}
-
-.child.references1 {
-  background-image: url("./assets/pexels-cup-of-couple-7302573 (1).jpg");
-}
-
-.child.references2 {
-  background-image: url("./assets/pexels-yan-krukov-6611373.jpg");
-}
-
-.child.references3 {
-  background-image: url("./assets/pexels-john-diez-7578299.jpg");
-}
-
-.child.about1 {
-  background-image: url("./assets/pexels-arthouse-studio-7559927.jpg");
-}
-
-.child.about2 {
-  background-image: url("./assets/pexels-anna-shvets-5642002.jpg");
-}
-
-.child.contact {
-  background-image: url("./assets/pexels-yan-krukov-6611472.jpg");
 }
 
 input,
