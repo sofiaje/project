@@ -14,16 +14,11 @@
 }
 // First page alignment
 .main-center {
-  @include flex;
+  @include flex($direction: column);
 }
 .center {
+  align-self: center;
   text-align: center;
-}
-
-//img gallery
-.gallery {
-  @include flex($justify: space-between);
-  gap: 0.5rem;
 }
 
 //text sections

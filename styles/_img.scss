@@ -19,12 +19,12 @@ nav img.log {
   padding: 0.5rem;
 }
 
-.portrait {
-  width: 100%;
-  @include md {
-    width: 50%;
-  }
-}
+// .portrait {
+//   width: 100%;
+//   @include md {
+//     width: 50%;
+//   }
+// }
 img.right {
   float: right;
   width: 100%;
@@ -34,4 +34,65 @@ img.right {
   @include lg {
     width: 50%;
   }
+}
+
+//img gallery
+.gallery {
+  @include flex($justify: space-between);
+  gap: 0.5rem;
+}
+
+//zoom img
+.parent {
+  width: 100%;
+  height: 450px;
+}
+.parent.portrait {
+  width: calc(50% - 0.25rem);
+  height: 400px;
+  @include md {
+    height: 550px;
+  }
+}
+.child {
+  width: 100%;
+  height: 100%;
+  background-color: $footerColor;
+  background-position: center;
+  background-size: cover;
+}
+
+//index
+.child.index1 {
+  background-image: url("/assets/pexels-cottonbro-studio-3094036.jpg");
+}
+.child.index2 {
+  background-image: url("/assets/pexels-yan-krukov-6611393.jpg");
+}
+.child.index3 {
+  background-image: url("/assets/pexels-cup-of-couple-7302403.jpg");
+}
+
+//references
+.child.references1 {
+  background-image: url("/assets/pexels-cup-of-couple-7302573 (1).jpg");
+}
+.child.references2 {
+  background-image: url("/assets/pexels-yan-krukov-6611373.jpg");
+}
+.child.references3 {
+  background-image: url("/assets/pexels-john-diez-7578299.jpg");
+}
+
+//about
+.child.about1 {
+  background-image: url("/assets/pexels-arthouse-studio-7559927.jpg");
+}
+.child.about2 {
+  background-image: url("/assets/pexels-anna-shvets-5642002.jpg");
+}
+
+//contact
+.child.contact {
+  background-image: url("/assets/pexels-yan-krukov-6611472.jpg");
 }

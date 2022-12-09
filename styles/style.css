@@ -76,23 +76,14 @@ footer i {
 
 .main-center {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .center {
+  align-self: center;
   text-align: center;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 section {
@@ -123,7 +114,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 @media (min-width: 576px) {
@@ -131,7 +121,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -172,7 +161,6 @@ section.card button {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 .flex h3 {
@@ -315,7 +303,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -336,7 +323,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 .footer-content ul {
@@ -351,7 +337,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
     width: 80%;
     max-width: 1400px;
@@ -394,15 +379,6 @@ nav img.log {
   padding: 0.5rem;
 }
 
-.portrait {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .portrait {
-    width: 50%;
-  }
-}
-
 img.right {
   float: right;
   width: 100%;
@@ -418,6 +394,73 @@ img.right {
   }
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.parent {
+  width: 100%;
+  height: 450px;
+}
+
+.parent.portrait {
+  width: calc(50% - 0.25rem);
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .parent.portrait {
+    height: 550px;
+  }
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-color: #d9e0de;
+  background-position: center;
+  background-size: cover;
+}
+
+.child.index1 {
+  background-image: url("/assets/pexels-cottonbro-studio-3094036.jpg");
+}
+
+.child.index2 {
+  background-image: url("/assets/pexels-yan-krukov-6611393.jpg");
+}
+
+.child.index3 {
+  background-image: url("/assets/pexels-cup-of-couple-7302403.jpg");
+}
+
+.child.references1 {
+  background-image: url("/assets/pexels-cup-of-couple-7302573 (1).jpg");
+}
+
+.child.references2 {
+  background-image: url("/assets/pexels-yan-krukov-6611373.jpg");
+}
+
+.child.references3 {
+  background-image: url("/assets/pexels-john-diez-7578299.jpg");
+}
+
+.child.about1 {
+  background-image: url("/assets/pexels-arthouse-studio-7559927.jpg");
+}
+
+.child.about2 {
+  background-image: url("/assets/pexels-anna-shvets-5642002.jpg");
+}
+
+.child.contact {
+  background-image: url("/assets/pexels-yan-krukov-6611472.jpg");
+}
+
 input,
 select {
   background-color: #f4f7f7;
@@ -431,7 +474,7 @@ select {
 
 #textarea {
   min-width: 100%;
-  height: 100px;
+  min-height: 100px;
 }
 
 body {
