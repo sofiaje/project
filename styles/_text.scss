@@ -1,3 +1,4 @@
+//general
 h1,
 h2,
 h3,
@@ -12,6 +13,12 @@ body {
 }
 h1 {
   font-size: 1.75rem;
+  @include md {
+    font-size: 2rem;
+  }
+}
+h3 {
+  font-size: 1.1rem;
 }
 
 //default link
@@ -23,17 +30,23 @@ a {
   }
 }
 
+//icons general
+i {
+  margin-right: 0.5rem;
+}
+
+//header
 .top-bar {
   font-size: small;
   text-align: center;
 }
 
+//footer
 footer {
   line-height: 1.3em;
   font-size: 0.9em;
   i {
     font-size: 1.5em;
-    padding-right: 5px;
   }
 }
 
