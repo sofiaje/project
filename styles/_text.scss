@@ -12,20 +12,15 @@ body,
 button {
   font-family: "Nunito", sans-serif;
 }
-h1 {
-  font-size: 1.75rem;
-  @include md {
-    font-size: 2rem;
-  }
-}
-h3 {
-  font-size: 1.1rem;
-}
+
 nav {
   a {
     color: $headerColorElements;
     padding: 1rem 0;
   }
+}
+h1.heading {
+  margin-left: 0.5rem;
 }
 //default link
 a {
@@ -50,9 +45,9 @@ i {
 //footer
 footer {
   line-height: 1.4em;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   i {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 

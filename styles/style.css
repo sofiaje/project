@@ -79,22 +79,13 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
-h1 {
-  font-size: 1.75rem;
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-h3 {
-  font-size: 1.1rem;
-}
-
 nav a {
   color: #ffffff;
   padding: 1rem 0;
+}
+
+h1.heading {
+  margin-left: 0.5rem;
 }
 
 a {
@@ -116,10 +107,10 @@ i {
 
 footer {
   line-height: 1.4em;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 footer i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .footer-copy {
@@ -168,24 +159,27 @@ footer i {
 section {
   text-align: left;
   max-width: 450px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 @media (min-width: 768px) {
   section {
     max-width: 400px;
+    padding: 1rem;
   }
 }
 
-button {
+a.button {
+  cursor: pointer;
   background-color: black;
-  font-size: medium;
   color: white;
-  border: 0px;
+  font-size: medium;
+  border: none;
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
   border-radius: 5px;
+  display: inline-block;
 }
-button:hover {
+a.button:hover {
   background-color: #6d7872;
 }
 
@@ -222,6 +216,10 @@ section.card {
 }
 section.card button {
   background-color: #6d7872;
+  border: none;
+}
+section.card button:hover {
+  background-color: black;
 }
 
 .references {
@@ -343,6 +341,7 @@ header li {
 
 button.hamburger {
   background-color: transparent;
+  border: 0;
   margin: 0;
 }
 
@@ -441,7 +440,7 @@ select {
 
 #textarea {
   min-width: 100%;
-  min-height: 100px;
+  height: 100px;
 }
 
 body {

@@ -74,8 +74,12 @@
 
       <main id="content-wrap" class="main-left">
         <div class="parent landscape">
-          <img src="./assets/pexels-yan-krukov-6611472.jpg" alt="Koppar och vaser står på ett element"></img>
+          <img
+            src="./assets/pexels-yan-krukov-6611472.jpg"
+            alt="Koppar och vaser står på ett element"
+          />
         </div>
+        <h1 class="heading">Hör av dig till oss</h1>
         <div class="flex-contact">
           <section>
             <h2>Kontakt</h2>
@@ -100,19 +104,13 @@
               10:00 - 15:00 <br />
             </p>
           </section>
-
         </div>
         <section class="form">
           <h2>Använd kontaktformulär</h2>
           <form>
             <div>
               <label for="name">Namn</label><br />
-              <input
-                type="text"
-                name="contact"
-                id="name"
-                autocomplete="cc-name"
-              />
+              <input type="text" name="contact" id="name" autocomplete="name" />
             </div>
             <div>
               <label for="email">E-postadress</label><br />
@@ -134,10 +132,10 @@
             </div>
             <div>
               <label for="textarea">Ditt ärende</label><br />
-              <input type="text" name="contact" id="textarea" /><br />
+              <input type="text" rows="10" name="contact" id="textarea" /><br />
             </div>
 
-            <button>Skicka</button>
+            <input type="submit" name="submit" value="Skicka" />
           </form>
         </section>
       </main>
