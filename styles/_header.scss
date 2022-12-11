@@ -6,6 +6,24 @@ header {
   }
 }
 
+//underline effect
+nav {
+  a {
+    color: $headerColorElements;
+    padding: 0.5rem 0;
+
+    position: relative;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid;
+    }
+  }
+  .active-site {
+    border-bottom: 1px solid;
+  }
+}
+
 .top-bar {
   display: none;
   background-color: $topBarColor;
@@ -15,9 +33,6 @@ header {
   @include md {
     display: block;
   }
-}
-.nav-link {
-  transition: 0.5s ease;
 }
 .navbar {
   max-width: 1400px;
@@ -51,25 +66,24 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     position: static;
-    gap: 60px;
+    gap: 40px;
     padding-bottom: 0px;
   }
 }
 .nav-item {
   margin-block: 1rem;
-  @include md {
-  }
 }
 .nav-menu.active {
   position: absolute;
   top: 110px;
   right: 0;
   @include md {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-end;
+    @include flex($justify: flex-end);
     position: static;
-    gap: 60px;
+    gap: 10px;
     padding-bottom: 0px;
   }
 }

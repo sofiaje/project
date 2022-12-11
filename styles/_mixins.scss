@@ -31,15 +31,18 @@ $xl: 1300px;
   flex-wrap: $wrap;
 }
 
-@mixin btn($btnColor: black, $btnText: white) {
+@mixin btn($btnColor: black, $btnText: white, $btnBorder: black) {
+  cursor: pointer;
   background-color: $btnColor;
   color: $btnText;
   font-size: medium;
-  border: none;
+  border: 1px solid;
+  border-color: $btnBorder;
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
   border-radius: 5px;
   &:hover {
     background-color: $headerColor;
+    border-color: $headerColor;
   }
 }

@@ -13,11 +13,8 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
-nav {
-  a {
-    color: $headerColorElements;
-    padding: 1rem 0;
-  }
+h1 {
+  font-size: 1.7rem;
 }
 h1.heading {
   margin-left: 0.5rem;
@@ -26,9 +23,6 @@ h1.heading {
 a {
   text-decoration: none;
   color: $footerColorElements;
-  &:hover {
-    color: $linkHoverHeader;
-  }
 }
 
 //icons general
