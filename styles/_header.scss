@@ -39,9 +39,12 @@ nav {
       border: none;
       position: absolute;
       margin: 0;
-      padding: 0 1em;
+      padding: 0 2em;
       right: 0;
     }
+  }
+  a {
+    padding: 0 1rem;
   }
 }
 .hide {

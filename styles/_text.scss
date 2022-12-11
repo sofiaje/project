@@ -23,6 +23,9 @@ h1.heading {
 a {
   text-decoration: none;
   color: $footerColorElements;
+  &:focus {
+    // outline: 2px goldenrod dashed;
+  }
 }
 
 //icons general

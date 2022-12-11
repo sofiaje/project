@@ -91,7 +91,6 @@ a {
   text-decoration: none;
   color: #000000;
 }
-
 i {
   margin-right: 0.5rem;
 }
@@ -149,9 +148,12 @@ footer i {
   .flex-contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
+}
+.flex-contact section {
+  margin-right: 4rem;
 }
 
 section {
@@ -194,6 +196,7 @@ section.card {
   width: 100%;
   max-width: 500px;
   margin: 0.5em;
+  padding: 1rem;
 }
 @media (min-width: 576px) {
   section.card {
@@ -287,6 +290,15 @@ a.button.btnGreen:hover {
   background-color: black;
 }
 
+input[type=submit] {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+input[type=submit]:hover {
+  background-color: black;
+}
+
 header {
   background-color: #626d67;
 }
@@ -324,9 +336,12 @@ nav .active-site {
     border: none;
     position: absolute;
     margin: 0;
-    padding: 0 1em;
+    padding: 0 2em;
     right: 0;
   }
+}
+.top-bar a {
+  padding: 0 1rem;
 }
 
 .hide {
@@ -496,27 +511,28 @@ footer {
 
 select,
 input {
-  background-color: #f4f7f7;
   min-width: 15rem;
   min-height: 1.5rem;
-  border: 1px solid #626d67;
+  border: 0px solid #626d67;
   border-radius: 5px;
   padding: 0.5rem;
   margin: 0.5rem 0;
 }
+select:focus,
+input:focus {
+  outline: 2px goldenrod solid;
+}
 
 #textarea {
-  min-width: 100%;
+  width: 100%;
+  max-width: 500px;
   height: 100px;
 }
 
-input[type=submit] {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-}
-input[type=submit]:hover {
-  background-color: #626d67;
+.form {
+  width: 100%;
+  padding: 1em;
+  background-color: #d9e0de;
 }
 
 body {

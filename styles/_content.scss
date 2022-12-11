@@ -24,7 +24,10 @@
 //contact-flex
 .flex-contact {
   @include md {
-    @include flex($justify: space-between);
+    @include flex($justify: flex-start);
+  }
+  section {
+    margin-right: 4rem;
   }
 }
 
@@ -57,6 +60,7 @@ section.card {
   width: 100%;
   max-width: 500px;
   margin: 0.5em;
+  padding: 1rem;
   @include sm {
     width: calc(50% - 1rem);
   }
@@ -100,6 +104,15 @@ a.button.btnWhite {
 a.button.btnGreen {
   @include btn($btnColor: $headerColor, $btnBorder: $headerColor);
   align-self: flex-end;
+  &:hover {
+    background-color: black;
+  }
+}
+//form-button
+input[type="submit"] {
+  cursor: pointer;
+  background-color: black;
+  color: white;
   &:hover {
     background-color: black;
   }
