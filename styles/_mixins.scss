@@ -33,6 +33,7 @@ $xl: 1300px;
 
 @mixin btn($btnColor: black, $btnText: white, $btnBorder: black) {
   cursor: pointer;
+  display: inline-block;
   background-color: $btnColor;
   color: $btnText;
   font-size: medium;

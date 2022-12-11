@@ -52,6 +52,7 @@ section {
 section.card {
   background-color: $footerColor;
   @include flex($direction: column, $justify: space-between);
+  align-items: flex-start;
 
   width: 100%;
   max-width: 500px;
@@ -61,13 +62,6 @@ section.card {
   }
   @include xl {
     width: calc(33% - 1rem);
-  }
-  button {
-    background-color: $headerColor;
-    border: none;
-    &:hover {
-      background-color: black;
-    }
   }
 }
 
@@ -96,7 +90,6 @@ section.card {
 //buttons
 a.button {
   @include btn;
-  display: inline-block;
 }
 a.button.btnWhite {
   @include btn($btnColor: white, $btnText: black);
@@ -106,7 +99,7 @@ a.button.btnWhite {
 }
 a.button.btnGreen {
   @include btn($btnColor: $headerColor, $btnBorder: $headerColor);
-  float: right;
+  align-self: flex-end;
   &:hover {
     background-color: black;
   }
