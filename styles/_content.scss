@@ -95,6 +95,7 @@ section.card {
 a.button {
   @include btn;
 }
+
 a.button.btnWhite {
   @include btn($btnColor: white, $btnText: black);
   &:hover {
