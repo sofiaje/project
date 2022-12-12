@@ -97,8 +97,14 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
+a.button:focus {
+  box-shadow: 0px 5px 10px #888888;
+}
+
 i {
   margin-right: 0.5rem;
+  padding: 0px;
 }
 
 .top-bar {
@@ -149,17 +155,8 @@ footer i {
   align-self: center;
   text-align: center;
 }
-
-@media (min-width: 768px) {
-  .flex-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-.flex-contact section {
-  margin-right: 4rem;
+.center p {
+  text-align: left;
 }
 
 section {
@@ -215,15 +212,15 @@ section.card {
   }
 }
 
-.references {
+div.references {
   background-color: #f4f7f7;
   padding: 1rem;
 }
-.references i {
+div.references i {
   color: #626d67;
   margin-bottom: 1rem;
 }
-.references section {
+div.references section {
   margin-bottom: 2rem;
 }
 
@@ -236,6 +233,23 @@ section.card {
 }
 .flex h3 {
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .flex-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1300px) {
+  .flex-contact {
+    justify-content: flex-start;
+  }
+  .flex-contact section {
+    margin-right: 6rem;
+  }
 }
 
 a.button {
@@ -253,6 +267,10 @@ a.button {
 a.button:hover {
   background-color: #626d67;
   border-color: #626d67;
+}
+a.button:hover {
+  background-color: #3e4b45;
+  box-shadow: 0px 5px 10px #888888;
 }
 
 a.button.btnWhite {
@@ -293,16 +311,7 @@ a.button.btnGreen:hover {
   border-color: #626d67;
 }
 a.button.btnGreen:hover {
-  background-color: black;
-}
-
-input[type=submit] {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-}
-input[type=submit]:hover {
-  background-color: #626d67;
+  background-color: #3e4b45;
 }
 
 header {
@@ -516,29 +525,42 @@ footer {
 }
 
 select,
-input {
+input,
+textarea {
   min-width: 15rem;
   min-height: 1.5rem;
-  border: 0px solid #626d67;
   border-radius: 5px;
+  border: none;
   padding: 0.5rem;
   margin: 0.5rem 0;
 }
 select:focus,
-input:focus {
-  outline: 2px goldenrod solid;
+input:focus,
+textarea:focus {
+  box-shadow: 0px 5px 10px #888888;
+  outline: 2px #daa520 solid;
 }
 
-#textarea {
+textarea {
   width: 100%;
   max-width: 500px;
-  height: 100px;
 }
 
 .form {
   width: 100%;
   padding: 1em;
   background-color: #d9e0de;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+}
+input[type=submit]:hover {
+  background-color: #3e4b45;
+  box-shadow: 0px 5px 10px #888888;
 }
 
 body {
