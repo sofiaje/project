@@ -3,22 +3,28 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+  font-family: "Cormorant Garamond", serif;
+}
+
 header,
 footer {
   font-family: "Libre Franklin", sans-serif;
 }
+
 body,
-button {
+button,
+.cards h2,
+h3 {
   font-family: "Nunito", sans-serif;
 }
-
 h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
-h1.heading {
-  margin-left: 0.5rem;
+.first-page-heading {
+  font-size: 2.2rem;
 }
+
 //default link
 a {
   text-decoration: none;

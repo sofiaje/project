@@ -34,13 +34,13 @@ $xl: 1300px;
 @mixin btn($btnColor: black, $btnText: white, $btnBorder: black) {
   cursor: pointer;
   display: inline-block;
-  background-color: $btnColor;
-  color: $btnText;
   font-size: medium;
-  border: 1px solid;
-  border-color: $btnBorder;
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
+  background-color: $btnColor;
+  color: $btnText;
+  border: 1px solid;
+  border-color: $btnBorder;
   border-radius: 5px;
   &:hover {
     background-color: $headerColor;

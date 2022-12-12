@@ -114,6 +114,6 @@ input[type="submit"] {
   background-color: black;
   color: white;
   &:hover {
-    background-color: black;
+    background-color: $headerColor;
   }
 }
