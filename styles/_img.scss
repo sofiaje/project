@@ -18,15 +18,12 @@ nav img.log {
 //user image
 .small {
   border-radius: 50%;
+  min-width: 70px;
   width: 20%;
   padding: 0.5rem;
 }
 
 //img gallery
-.gallery {
-  @include flex($justify: space-between);
-  gap: 0.5rem;
-}
 .flex-gallery {
   @include flex($justify: space-between);
   gap: 0.5rem;

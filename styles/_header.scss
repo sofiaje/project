@@ -6,13 +6,12 @@ header {
   }
 }
 
-//underline effect
+//nav links
 nav {
   a.nav-link {
     color: $headerColorElements;
     padding: 0.5rem 0;
 
-    position: relative;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -38,18 +37,21 @@ nav {
       background-color: transparent;
       border: none;
       position: absolute;
+      right: 0;
       margin: 0;
       padding: 0 2em;
-      right: 0;
     }
   }
   a {
     padding: 0 1rem;
   }
 }
+
+//when closing top-bar
 .hide {
   display: none;
 }
+
 .navbar {
   max-width: 1400px;
   margin: 0 auto;
@@ -57,15 +59,7 @@ nav {
   align-items: center;
   padding: 0 1.5rem;
 }
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkittransition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: $headerColorElements;
-}
+
 .nav-menu {
   position: fixed;
   top: -100%;
@@ -86,6 +80,29 @@ nav {
 .nav-item {
   margin-block: 1rem;
 }
+
+//hamburger menu
+.hamburger {
+  display: block;
+  cursor: pointer;
+  @include md {
+    display: none;
+  }
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkittransition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: $headerColorElements;
+}
+button.hamburger {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
 .nav-menu.active {
   position: absolute;
   top: 110px;
@@ -95,18 +112,6 @@ nav {
     position: static;
     padding-bottom: 0px;
   }
-}
-.hamburger {
-  display: block;
-  cursor: pointer;
-  @include md {
-    display: none;
-  }
-}
-button.hamburger {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
 }
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
