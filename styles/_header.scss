@@ -23,7 +23,6 @@ nav {
 .top-bar {
   display: none;
   background-color: $topBarColor;
-  color: $topBarColorElements;
   padding: 0.4rem;
 
   @include md {
