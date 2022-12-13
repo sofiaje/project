@@ -160,6 +160,11 @@ footer .footer-link:hover {
   align-self: center;
 }
 
+.flex-end {
+  align-self: flex-end;
+  text-align: right;
+}
+
 section {
   text-align: left;
   max-width: 500px;
