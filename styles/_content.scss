@@ -12,6 +12,7 @@
     max-width: 1200px;
   }
 }
+
 // First page alignment
 .main-center {
   @include flex($direction: column);
@@ -26,7 +27,7 @@
 
 //text sections
 section {
-  text-align: left;
+  // text-align: left;
   max-width: 500px;
   padding: 0.5rem 1rem;
   @include md {
@@ -35,32 +36,14 @@ section {
   }
 }
 
-// cards - about, courses, references
+// card container - about, courses, references
 .cards {
   @include flex($justify: center);
   @include sm {
     @include flex($justify: space-between);
   }
-  i {
-    color: $headerColor;
-  }
 }
 
-.flex-courses {
-  @include flex($justify: flex-start);
-}
-
-section.card-course {
-  background-color: $footerColor;
-  @include flex($direction: column, $justify: space-between);
-  align-items: flex-start;
-  width: 100%;
-  margin: 0.5em;
-  padding: 1rem;
-  @include lg {
-    width: calc(50% - 1rem);
-  }
-}
 section.card {
   background-color: $footerColor;
   @include flex($direction: column, $justify: space-between);
@@ -69,6 +52,8 @@ section.card {
   width: 100%;
   margin: 0.5em;
   padding: 1rem;
+}
+section.card.staff {
   @include sm {
     width: calc(50% - 1rem);
   }
@@ -76,6 +61,18 @@ section.card {
     width: calc(33% - 1rem);
   }
 }
+.flex-courses {
+  @include flex($justify: center);
+  @include sm {
+    @include flex($justify: flex-start);
+  }
+}
+section.card.course {
+  @include lg {
+    width: calc(50% - 1rem);
+  }
+}
+
 // specific forreferences cards
 section.card.reference {
   background-color: $referenceColor;

@@ -20,7 +20,7 @@ footer {
   text-align: center;
   align-self: center;
   margin-bottom: 2.5rem;
-  max-width: 15rem;
+  max-width: 16rem;
   @include xl {
     text-align: left;
   }
@@ -30,9 +30,7 @@ footer {
   ul {
     padding-inline-start: 0;
   }
-  li {
-    list-style: none;
-  }
+  
   @include flex($direction: column);
 
   @include md {

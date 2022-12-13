@@ -5,7 +5,6 @@
 //   }
 // }
 
-
 //general
 h1,
 h2,
@@ -49,6 +48,10 @@ button {
   &:hover {
     color: #daa520;
   }
+}
+
+li {
+  list-style: none;
 }
 
 //icons general
