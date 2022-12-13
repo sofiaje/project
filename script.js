@@ -10,11 +10,11 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 })
 
-addEventListener("scroll", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+// addEventListener("scroll", () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
     
-})
+// })
 
 document.querySelectorAll(".nav-link").forEach(item => item.addEventListener("click", () => {
     hamburger.classlist.remove("active");
