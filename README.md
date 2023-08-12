@@ -15,3 +15,4 @@ This project serves as the first course assignment in our current education and 
 - Sass
 - Flexbox
 - WCAG 2.1 standards
+- Javascript
