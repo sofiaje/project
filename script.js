@@ -23,4 +23,12 @@ document.querySelectorAll(".nav-link").forEach(item => item.addEventListener("cl
 
 close.addEventListener("click", () => {
     topBar.classList.add("hide");
+    localStorage.setItem('bannerClosed', 'true');
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    let isClosed = localStorage.getItem('bannerClosed');
+    if (isClosed) {
+        topBar.classList.add("hide");
+    }
 })
